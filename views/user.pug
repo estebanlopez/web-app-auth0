@@ -5,3 +5,6 @@ block content
   h2 Welcome #{user.nickname}!
   br
   a(href='/logout') Logout
+  br
+  h3 Your Roles:
+  p <b>#{user._json.roles}</b>
