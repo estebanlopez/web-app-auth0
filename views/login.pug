@@ -12,7 +12,17 @@ block content
         ,params: {
           scope: 'openid name email picture'
         }
-      }});
+      },
+      allowedConnections: ['Username-Password-Authentication'],
+      autofocus: true,
+      closable: false,
+      language: 'es',
+      theme: { 
+        logo: 'http://icons.iconarchive.com/icons/limav/game-of-thrones/512/Stark-icon.png',
+        primaryColor: '#999999'
+      },
+      allowSignUp: false
+      });
 
     // Show lock's login widget
     lock.show();
